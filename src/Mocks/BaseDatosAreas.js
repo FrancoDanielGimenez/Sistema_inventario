@@ -1,0 +1,31 @@
+const Sector = [
+  {id:"",area:"Todos"},
+  {id:"",area:"Agua Potable"},
+  {id:"",area:"Banco de Sangre"},
+  {id:"",area:"Cajas"},
+  {id:"",area:"Central Telefónica"},
+  {id:"",area:"Comercial"},
+  {id:"",area:"Compras"},
+  {id:"",area:"Consejo"},
+  {id:"",area:"Contaduria"},
+  {id:"",area:"Deposito"},
+  {id:"",area:"Gerencia"},
+  {id:"",area:"Guardia Seguridad"},
+  {id:"",area:"Internet"},
+  {id:"",area:"IPTV"},
+  {id:"",area:"Mantenimiento"},
+  {id:"",area:"Personal"},
+  {id:"",area:"Reclamos"},
+  {id:"",area:"Redes"},
+  {id:"",area:"Secretaria"},
+  {id:"",area:"Higiene y Seguridad"},
+  {id:"",area:"Sistemas"},
+  {id:"",area:"Tablero"},
+  {id:"",area:"Técnica"},
+  {id:"",area:"Telefonía"},
+  {id:"",area:"Tesorería"},
+  {id:"",area:"Ventas"},
+
+]
+
+export default Sector;

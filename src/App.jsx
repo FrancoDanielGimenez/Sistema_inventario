@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home/Home';
+import ListaVpn from './pages/MuestraElementos/ListadoVpn/ListaVpn';
+import ListaPcEscritorio from './pages/MuestraElementos/ListadoPcEscritorio/ListaPcEscritorio';
+import ListaNotebook from './pages/MuestraElementos/ListaNotebook/ListaNotebook';
+import Header from '../src/components/Header';
+import HomeListaElementos from './pages/MuestraElementos/HomeListaElementos/HomeListaElementos';
+import ListaImpresora from './pages/MuestraElementos/ListadoImpresoras/ListaImpresora';
+import TelefonosInternos from './pages/TelefonosInternos/TelefonosInternos';
+import CargaNewImpresora from './pages/CargaElementos/NewImpresora/CargaNewImpresora';
+import HomeCargaElementos from './pages/CargaElementos/HomeCargaElementos/HomeCargaElementos';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Header/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/HomeListaElementos' element={<HomeListaElementos/>}/>
+          <Route path='/ListaVpn' element={<ListaVpn/>}/>
+          <Route path='/ListaPcEscritorio' element={<ListaPcEscritorio/>}/>
+          <Route path='/ListaNotebook' element={<ListaNotebook/>}/>
+          <Route path='/ListaImpresora' element={<ListaImpresora/>}/>
+          <Route path='/TelefonosInternos' element={<TelefonosInternos/>}/>
+          {/**Ruta de Carga de Nuevos Elementos */}
+          <Route path='/NuevosElementos' element={<HomeCargaElementos/>}/>
+          <Route path='/NuevaImpresora' element={<CargaNewImpresora/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

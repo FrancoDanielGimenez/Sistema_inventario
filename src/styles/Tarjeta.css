@@ -1,0 +1,10 @@
+.tarjetaIcono{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .tarjetaIcono {
+      font-size: 40px;
+    }
+  }

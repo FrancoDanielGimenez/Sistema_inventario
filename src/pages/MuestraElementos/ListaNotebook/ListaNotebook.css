@@ -1,0 +1,11 @@
+.searchListNtb{
+    margin: 10px 10px 0 10px;
+}
+
+.tablaListNtb{
+    margin: 0 10px 0 10px;
+}
+
+.btnSearchNtb, .btnResetTable, .btnVolverMenu{
+    margin: 10px;
+}

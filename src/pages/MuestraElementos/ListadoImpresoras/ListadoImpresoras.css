@@ -1,0 +1,7 @@
+.searchListPrinter, .tablaListPrinter{
+    margin: 0 10px 10px 10px;
+}
+
+.btnSearchPrinter, .btnResetPrinter, .btnVolver{
+  margin: 10px 10px 0 10px;
+}
