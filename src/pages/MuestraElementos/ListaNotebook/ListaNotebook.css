@@ -9,3 +9,12 @@
 .btnSearchNtb, .btnResetTable, .btnVolverMenu{
     margin: 10px;
 }
+
+@media(max-width: 500px){
+    /* .modalInfoNtb, .titleNtb{
+        color: aqua;
+    } */
+    th,td{
+       font-size: 12px;
+    }
+}
